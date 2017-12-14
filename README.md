@@ -17,8 +17,17 @@ In summary:
 ```
 vagrant up
 vagrant ssh
-source venv/bin/activate
+activate
 cd /synced/
 ```
 
 So from now, everything you do will be synced with your host machine.
+
+
+## Knowledge
+
+How to start a new role with `molecule`:
+
+```
+molecule init role --role-name foo --driver-name docker
+```
