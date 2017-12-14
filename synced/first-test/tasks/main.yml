@@ -1,2 +1,5 @@
 ---
 # tasks file for first-test
+
+- name: install wget package
+  yum: name=wget state=present

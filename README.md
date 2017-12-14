@@ -31,3 +31,24 @@ How to start a new role with `molecule`:
 ```
 molecule init role --role-name foo --driver-name docker
 ```
+
+To execute the project `first-test`:
+
+```
+cd first-test
+```
+
+Create the Docker container
+```
+molecule create
+```
+
+We can then run our tests, we obviously expect them to fail at this point since we've not run any Ansible on the container.
+```
+molecule verify
+```
+
+After any change has been made into our playbook, we need to `converge` again:
+```
+molecule converge
+```

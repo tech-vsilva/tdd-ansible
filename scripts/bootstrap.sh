@@ -8,6 +8,7 @@ mkdir -p ~/ansible/ruby \
 && venv/bin/pip install python-vagrant \
 && venv/bin/pip install ansible \
 && venv/bin/pip install docker \
+&& venv/bin/pip install docker-py \
 && venv/bin/pip install molecule \
 && venv/bin/pip install -U testinfra \
 && venv/bin/pip list --format=legacy | grep testinfra \

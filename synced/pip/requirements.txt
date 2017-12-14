@@ -18,6 +18,7 @@ configparser==3.5.0
 cookiecutter==1.5.1
 cryptography==2.1.4
 docker==2.6.1
+docker-py==1.10.6
 docker-pycreds==0.2.1
 enum34==1.1.6
 fasteners==0.14.1
