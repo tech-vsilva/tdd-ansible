@@ -13,6 +13,8 @@ def test_hosts_file(host):
     assert f.user == 'root'
     assert f.group == 'root'
 
+
 def test_wget_package(host):
-  p = host.package('wget')
-  assert p.is_installed
+    p = host.package('wget')
+
+    assert p.is_installed

@@ -3,10 +3,3 @@
 
 - name: install wget package
   yum: name=wget state=present
-
-- name: Create AWS IAM user
-  iam:
-    iam_type: user
-    name: "test-user-0"
-    state: "present"
-    
